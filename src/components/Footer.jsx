@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
-  return (
-    <footer>&copy; Conceptual Life {new Date().getFullYear()}</footer>
-  )
-}
+    return <footer>&copy; Conceptual Life {new Date().getFullYear()}</footer>;
+};
 
-export default Footer
+export default Footer;

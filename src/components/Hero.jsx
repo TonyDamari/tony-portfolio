@@ -1,49 +1,49 @@
 import React from "react";
-import TonyImg from "../assets/Profile.svg";
+import bgImg from "../assets/1.jpg";
+import { Backdrop, Box, Button, Divider, Typography } from "@mui/material";
+import zIndex from "@mui/material/styles/zIndex";
 
 const Hero = () => {
     return (
-        <section className="hero">
-            <div className="hero-img">
-                <img src={TonyImg} alt="Profile" />
-            </div>
-            <div className="hero-text">
-                <h1>Tony Damari</h1>
-                <p>
-                    Hi, I'm Tony. I am a Frontend Developer in Johannesburg, focused on web
-                    development and web applications using current web technologies such as React, Node, Bootstrap and so on.
-                    <br />
-                    My goal is to gain enough experience to level up my skills and be a well rounded fullstack developer.
-                </p>
-                <div className="links">
-                    <ul>
-                        <li>
-                            <a
-                                href="https://github.com/TonyDamari"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Github
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://twitter.com/ConceptualLifeA"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Twitter
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:tony.damari@gmail.com">
-                                Contact Me
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <Box
+            component="div"
+            sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                position: "relative",
+                width: "100vw",
+                height: "100vh",
+                backgroundImage: `url(${bgImg})`,
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                "&::before": {
+                    content: '""',
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    background:
+                        "radial-gradient(circle at 24.1% 68.8%, rgba(50, 50, 50,0.6) 0%, rgba(0, 0, 0,0.6) 99.4%)",
+                },
+            }}
+        >
+            <Box
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                zIndex={1}
+            >
+                <Typography variant="h1" gutterBottom>
+                    Tony Damari
+                </Typography>
+                <Divider sx={{borderWidth:'1px',width:'100%', borderColor:'white'}}/>
+                <Typography align="center" mt={2} variant="h5">
+                    Frontend Software Developer
+                </Typography>
+            </Box>
+        </Box>
     );
 };
 
