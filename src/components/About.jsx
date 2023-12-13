@@ -1,59 +1,52 @@
 import React from "react";
-import html from "../assets/html5-logo-31819.png";
-import reactImg from "../assets/react.png";
-import NodeImg from "../assets/node.png";
-import ExpressImg from "../assets/express.png";
-import MongoImg from "../assets/mongodb.png";
-import GithubImg from "../assets/github.png";
-import NPMImg from "../assets/npm.png";
-import FigmaImg from "../assets/figma.png";
-import VScodeImg from "../assets/vscode.png";
-import { Box, List, ListItem, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Heading from "./Heading";
+import {  business_tools, frameworks, languages, platinum, web_technologies } from "./constants";
+import { ListBox } from "./ListBox";
+import wave from "../assets/waved.png";
 
 const About = () => {
     return (
-        <Box m="1.5em 2.5em"  height='100vh'id='#about'>
+        <Box
+            name="about"
+            m="1.5em 2.5em"
+            id="#about"
+            p={5}
+            // sx={{
+            //     backgroundImage: `url(${wave})`,
+            //     backgroundSize: "cover",
+            //     backgroundPosition: "center",
+            //     backgroundRepeat: "no-repeat",
+            //     backgroundBlendMode: "darken",
+            //     width: "100vw",
+            //     minheight: "100vh",
+            // }}
+        >
             <Heading title="About" />
-            <Box mb={2}>
-                <Typography gutterBottom>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim itaque accusamus sed aut voluptatem dolore cupiditate
-                    adipisci perspiciatis illo vel inventore ipsam libero,
-                    aperiam possimus consequuntur ducimus repellendus dolor
-                    sapiente.
+            {/* <img src={wave} alt="" /> */}
+            <Box mb={4}>
+                <Typography gutterBottom sx={{ color: platinum }}>
+                    I am a passionate and results-driven software developer with a year of hands-on experience in
+                    crafting robust and user-friendly applications. My journey in the world of programming began with a
+                    profound fascination for technology, and over the past year, I have honed my skills in JavaScript,
+                    TypeScript, React, React Native, and WordPress.
+                </Typography>
+                <br />
+                <Typography gutterBottom sx={{ color: platinum }}>
+                    I find joy in turning ideas into reality through elegant and efficient code. My commitment to
+                    staying on top of industry trends and my continuous thirst for knowledge have been pivotal in my
+                    professional growth. I thrive in collaborative environments and am always eager to take on new
+                    challenges that push the boundaries of my expertise.
                 </Typography>
             </Box>
-            <Box mb={2}>
-                <Typography variant="h3" gutterBottom>Tech Stack</Typography>
-            <Box>
-                <Typography variant="h4"gutterBottom>Languages</Typography>
-                <List>
-                    <ListItem>JavaScript</ListItem>
-                    
-                </List>
-            </Box>
-            <Box mb={2}>
-                <Typography variant="h4" gutterBottom>Frameworks</Typography>
-                <List>
-                    <ListItem>React</ListItem>
-                    <ListItem>Redux</ListItem>
-                </List>
-            </Box>
-            <Box mb={2}>
-                <Typography variant="h4" gutterBottom>Libraries</Typography>
-                <List>
-                    <ListItem>React</ListItem>
-                    <ListItem>Redux</ListItem>
-                </List>
-            </Box>
-            <Box mb={2}>
-                <Typography variant="h4" gutterBottom>Technologies</Typography>
-                <List>
-                    <ListItem>React</ListItem>
-                    <ListItem>Redux</ListItem>
-                </List>
-            </Box>
+            <Box p={5}>
+                <Typography variant="h3" gutterBottom>
+                    Tech Stack
+                </Typography>
+                <ListBox title="Languages" listItems={languages} />
+                <ListBox title="Frameworks / Libraries" listItems={frameworks} />
+                <ListBox title="Technologies" listItems={web_technologies} />
+                <ListBox title="Business Tools" listItems={business_tools} />
             </Box>
         </Box>
     );

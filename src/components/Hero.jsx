@@ -7,13 +7,14 @@ const Hero = () => {
     return (
         <Box
             component="div"
+            name="hero"
             sx={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
                 position: "relative",
-                width: "100vw",
+                // width: "100vw",
                 height: "100vh",
                 backgroundImage: `url(${bgImg})`,
                 backgroundPosition: "center",
@@ -29,16 +30,11 @@ const Hero = () => {
                 },
             }}
         >
-            <Box
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                zIndex={1}
-            >
+            <Box display="flex" flexDirection="column" alignItems="center" zIndex={1}>
                 <Typography variant="h1" gutterBottom>
                     Tony Damari
                 </Typography>
-                <Divider sx={{borderWidth:'1px',width:'100%', borderColor:'white'}}/>
+                <Divider sx={{ borderWidth: "1px", width: "100%", borderColor: "white" }} />
                 <Typography align="center" mt={2} variant="h5">
                     Frontend Software Developer
                 </Typography>

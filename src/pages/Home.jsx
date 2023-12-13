@@ -19,9 +19,9 @@ const Home = () => {
             }}
         >
             <Hero />
-            {/* <About />
+            <About />
             <Projects />
-            <Contact/> */}
+            <Contact />
         </motion.main>
     );
 };
