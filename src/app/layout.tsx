@@ -1,54 +1,53 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { structuredData } from "../lib/structured-data";
-import "./globals.css";
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+import { structuredData } from "../lib/structured-data"
+import "./globals.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+})
 
 export const metadata: Metadata = {
-  title: "Tony Damari - Web Developer Portfolio",
+  title: "Tony Damari | Software Engineer",
   description:
-    "Full-stack web developer specializing in React, Next.js, and modern web technologies. View my projects and get in touch.",
+    "Software Engineer specialising in React, TypeScript and Next.js, with a growing focus on full-stack development, Node.js and AWS.",
   keywords:
-    "Tony Damari, web developer, React, Next.js, TypeScript, full-stack developer, portfolio",
+    "Tony Damari, Software Engineer, React, Next.js, TypeScript, Node.js, full-stack developer, frontend developer, AWS, portfolio",
   authors: [{ name: "Tony Damari" }],
   creator: "Tony Damari",
   openGraph: {
-    title: "Tony Damari - Web Developer",
+    title: "Tony Damari | Software Engineer",
     description:
-      "Full-stack web developer specializing in React, Next.js, and modern web technologies.",
+      "Software Engineer specialising in React, TypeScript and Next.js, with a growing focus on full-stack development, Node.js and AWS.",
     url: "https://tonydamari.netlify.app/",
-    siteName: "Tony Damari Portfolio",
+    siteName: "Tony Damari",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tony Damari - Web Developer",
+    title: "Tony Damari | Software Engineer",
     description:
-      "Full-stack web developer specializing in React, Next.js, and modern web technologies.",
+      "Software Engineer specialising in React, TypeScript and Next.js, with a growing focus on full-stack development, Node.js and AWS.",
   },
   robots: {
     index: true,
     follow: true,
   },
-  viewport: "width=device-width, initial-scale=1",
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="canonical" href="https://tonydamari.netlify.app/" />
         <meta name="theme-color" content="#0a0a0a" />
@@ -65,5 +64,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }

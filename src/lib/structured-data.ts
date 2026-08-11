@@ -1,21 +1,28 @@
 export const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Tony Damari",
-  "jobTitle": "Web Developer",
-  "description": "Full-stack web developer specializing in React, Next.js, and modern web technologies",
-  "url": "https://tonydamari.com",
-  "sameAs": [
-    "https://github.com/tonydamari",
-    "https://linkedin.com/in/tonydamari"
+  name: "Tony Damari",
+  jobTitle: "Software Engineer",
+  description:
+    "Software Engineer specialising in React, TypeScript and Next.js, with a growing focus on full-stack development, Node.js and AWS.",
+  url: "https://tonydamari.netlify.app",
+  sameAs: [
+    "https://github.com/TonyDamari",
+    "https://linkedin.com/in/tonydamari",
   ],
-  "knowsAbout": [
+  knowsAbout: [
     "React",
     "Next.js",
     "TypeScript",
+    "JavaScript",
     "Node.js",
-    "Web Development",
+    "NestJS",
+    "PostgreSQL",
+    "AWS",
+    "Docker",
+    "React Native",
     "Frontend Development",
-    "Backend Development"
-  ]
+    "Full-Stack Development",
+    "Software Engineering",
+  ],
 };

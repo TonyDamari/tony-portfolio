@@ -1,8 +1,8 @@
+// Legacy file — kept for reference. Skills are now in constants.ts as skillGroups.
 export const stackData = {
-  Frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  Backend: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
-  Mobile: ["React Native", "Expo", "iOS Development", "Android Development"],
-  Cloud: ["AWS", "Vercel", "Docker", "CI/CD", "Serverless"],
-//   Contact: ["Email: tony@example.com", "LinkedIn: /in/tonydamari", "GitHub: /tonydamari"]
-};
-
+  Frontend: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "shadcn/ui", "HTML", "CSS", "Vite"],
+  "Backend & APIs": ["Node.js", "NestJS", "REST APIs", "PostgreSQL", "Prisma"],
+  "Cloud & DevOps": ["AWS", "Docker", "CI/CD", "Git", "GitHub", "GitLab"],
+  Mobile: ["React Native", "Expo"],
+  "CMS & Platforms": ["WordPress", "Webflow", "Headless CMS"],
+}

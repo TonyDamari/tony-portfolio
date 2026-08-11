@@ -1,10 +1,12 @@
 const Footer = () => {
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear()
   return (
-    <footer className="z-10 flex justify-center items-center mb-4 sm:mb-6 md:mb-10 px-4 w-full font-normal text-xs sm:text-sm md:text-base text-white text-center leading-relaxed">
-      &copy; {year} Conceptual Life. All Rights Reserved.
+    <footer className="z-10 px-4 sm:px-8 md:px-20 py-8 border-zinc-800 border-t">
+      <p className="text-gray-500 text-xs sm:text-sm text-center">
+        &copy; {year} Tony Damari. Built with Next.js and TypeScript.
+      </p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
