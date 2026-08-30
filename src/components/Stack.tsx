@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useRouter } from "next/navigation"
 import { useState } from "react"
 import { stackData } from "../lib/stack-data"
 import Modal from "./Modal"
@@ -12,6 +13,7 @@ const Stack = () => {
 
   const openModal = (stack: string) => setActiveModal(stack)
   const closeModal = () => setActiveModal(null)
+  const router = useRouter()
 
   return (
     <motion.section
@@ -28,12 +30,12 @@ const Stack = () => {
             {(Object.keys(stackData) as StackKey[]).map((stack) => (
               <button
                 key={stack}
-                onClick={() => openModal(stack)}
+                onClick={() => router.push("/about#skills")}
                 className="group hover:bg-white/5 p-3 sm:p-4 rounded-lg text-left transition-colors cursor-pointer"
               >
                 <div className="font-mono font-medium text-white text-sm sm:text-base">[ {stack} ]</div>
                 <div className="mt-1 sm:mt-2 text-gray-400 group-hover:text-gray-300 text-xs sm:text-sm">
-                  {stackData[stack].slice(0, 3).join(" · ")} <br />
+                  {/* {stackData[stack].slice(0, 3).join(" · ")} <br /> */}
                   <span className="opacity-75 text-xs">View more</span>
                 </div>
               </button>
