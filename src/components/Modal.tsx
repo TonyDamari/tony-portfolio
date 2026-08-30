@@ -50,7 +50,7 @@ const Modal = ({ isOpen, onClose, title, content }: ModalProps) => {
               </h2>
               <button
                 onClick={onClose}
-                className="flex-shrink-0 text-gray-400 hover:text-white text-2xl sm:text-3xl transition-colors cursor-pointer"
+                className="flex-shrink-0 text-gray-400 hover:text-emerald-400 text-2xl sm:text-3xl transition-colors cursor-pointer"
               >
                 <X />
               </button>

@@ -15,16 +15,44 @@ export interface MobileProject extends Project {
 
 export const webProjects: Project[] = [
   {
-    title: "BeYou Dashboard",
-    description: "A responsive dashboard for managing metrics and analytics with real-time API data.",
+    title: "Senco AI Payment",
+    description:
+      "An AI-powered payments and merchant platform with a large dashboard surface — transactions, payouts, analytics, risk, SMS payments, payment links, reports and an AI assistant.",
+    image: "/images/fallback.png",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "Headcount",
+    description:
+      "A workforce planning and headcount management platform with dashboards, recruitment, attrition, budgeting and analytics. Built as an embeddable SPA with SSO and rich, editable data grids.",
+    image: "/images/fallback.png",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+  },
+  {
+    title: "Metricate",
+    description:
+      "A gamified employee performance and coaching platform featuring leaderboards, badges, challenges, coaching forms, messaging and a knowledge base, with real-time updates and 3D avatars.",
     image: "/projects/BeYou.png",
-    tech: ["Vite", "TypeScript", "Tailwind"],
-    // liveUrl: "https://www.libremax.com/",
+    tech: ["React", "TypeScript", "Vite"],
+  },
+  {
+    title: "Investor Portal",
+    description:
+      "A full-stack, white-label investor portal. Configurable per-client CMS backend with 2FA, S3 document storage, PDF/CSV handling and dashboards, paired with an authenticated Next.js portal frontend.",
+    image: "/images/fallback.png",
+    tech: ["Next.js", "AdonisJS", "PostgreSQL", "AWS"],
+  },
+  {
+    title: "BasisPoint Multi-Tenant CMS",
+    description:
+      "A multi-tenant CMS where a single app and database serve multiple client websites, each with their own content, users and settings. Built on Payload CMS with S3 storage and SES email.",
+    image: "/images/fallback.png",
+    tech: ["Payload CMS", "Next.js", "PostgreSQL", "AWS"],
   },
   {
     title: "VideoChat",
     description:
-      "Add live video chat to your website in seconds. Increase sales by 40% with face-to-face customer interactions. No downloads required - works in any browser.",
+      "Add live video chat to your website in seconds with face-to-face customer interactions. No downloads required — works in any browser.",
     image: "/projects/videochat.png",
     tech: ["Vite", "TypeScript", "Tailwind"],
     liveUrl: "https://videochat.live/",
@@ -54,7 +82,7 @@ export const webProjects: Project[] = [
   },
   {
     title: "Mesarete Capital",
-    description: "A responsive dashboard for managing content and analytics with real-time API data.",
+    description: "A responsive marketing site for a capital management firm with real-time API-driven content.",
     image: "/projects/mesarete.png",
     tech: ["Next.js", "TypeScript", "Tailwind"],
     liveUrl: "https://www.mesaretecapital.com/",
@@ -65,19 +93,54 @@ export const mobileProjects: MobileProject[] = [
   {
     title: "Lifestyle Rewards",
     description:
-      "Earn real Cash-Back, enjoy exclusive deals, and make every purchase rewarding with Lifestyle Rewards. It’s that simple.",
+      "Earn real cash-back, enjoy exclusive deals, and make every purchase rewarding. Features biometric login, a digital wallet, partner integrations and push notifications.",
     image: "/projects/Lifestyle_Rewards.png",
-    tech: ["React Native", "Firebase"],
+    tech: ["React Native", "Redux Toolkit", "Firebase"],
     iosUrl: "https://apps.apple.com/za/app/lifestyle-rewards/id1581131905",
     androidUrl: "https://play.google.com/store/apps/details?id=com.llmobile&hl=en_ZA",
   },
   {
     title: "tAIsty",
-    description: "AI recipe generating app",
+    description: "An AI-powered recipe generating app built with Expo and React Native.",
     image: "/projects/taisty.webp",
-    tech: ["React Native", "AI"],
+    tech: ["Expo", "React Native", "TypeScript"],
     iosUrl: "https://apps.apple.com/za/app/taisty/id6448109710",
     androidUrl: "https://play.google.com/store/apps/details?id=com.fuseboxdeveloper.tAIsty",
+  },
+  {
+    title: "Leroo",
+    description:
+      "A cross-platform payments and wallet app with payer and recipient roles, wallet, transaction history and profile management. Delivered to iOS and Android via Capacitor.",
+    image: "/images/fallback.png",
+    tech: ["React", "TypeScript", "Capacitor", "Supabase"],
+  },
+  {
+    title: "VideoChat iOS",
+    description:
+      "A native iOS admin app for the VideoChat platform with authentication, dashboard, real-time messaging and video call capabilities.",
+    image: "/projects/videochat.png",
+    tech: ["Swift", "SwiftUI", "Twilio"],
+  },
+  {
+    title: "VidLink",
+    description:
+      "A native iOS VoIP and video-calling app with Google Sign-In and push notification support.",
+    image: "/images/fallback.png",
+    tech: ["Swift", "SwiftUI"],
+  },
+  {
+    title: "The Stress Code",
+    description:
+      "A React Native mobile app featuring charts, progress tracking, audio playback and push notifications.",
+    image: "/images/fallback.png",
+    tech: ["React Native", "Redux Toolkit", "Firebase"],
+  },
+  {
+    title: "Kitchen Kings",
+    description:
+      "A React Native mobile app with QR-code support, animated UI and local state persistence.",
+    image: "/images/fallback.png",
+    tech: ["React Native", "NativeWind", "Zustand"],
   },
 ]
 
@@ -92,7 +155,7 @@ export const moreProjects = [
   { title: "Aptior Capital", url: "https://www.aptiorcapital.com/" },
   { title: "Aquidneck Advisors", url: "http://aquidneckadvisors.com/" },
   { title: "Arini", url: "https://arini.com/" },
-  { title: "Arxnova Asset Management", url: "#" },
+  { title: "Arxnova Asset Management", url: "https://www.arxnova-am.com/" },
   { title: "Avantyr", url: "https://www.avantyrcapital.com/" },
   { title: "Basis Point Group", url: "https://basispoint.group/" },
   { title: "Bayforest Technologies", url: "https://bayforest.ai/" },
@@ -105,7 +168,7 @@ export const moreProjects = [
   { title: "Cleardusk Management", url: "https://www.cleardusk.com/" },
   { title: "Coventry Structured Investments", url: "https://www.coventrysi.com/" },
   { title: "Cross Creek", url: "https://www.crosscreek.vc/" },
-  { title: "Develop Capital", url: "#" },
+  { title: "Develop Capital", url: "https://developcp.com/" },
   { title: "Decagon Asset Management", url: "https://decagonam.com/" },
   { title: "Diameter Capital Partners", url: "https://www.diametercap.com/" },
   { title: "DLD Asset Management", url: "https://dldam.com/" },
@@ -162,8 +225,12 @@ export const moreProjects = [
   { title: "System 2 Capital", url: "https://system2capital.com/" },
   { title: "Taula Capital", url: "https://www.taulacapital.com/" },
   { title: "Teleios Capital", url: "https://www.teleioscapital.com/" },
+  { title: "Thayer Street Partners", url: "https://www.thayerstreet.com/" },
   { title: "Trimaran", url: "https://trimaranadvisors.com/" },
   { title: "Turnspire", url: "https://www.turnspirecap.com/" },
   { title: "Tycho Capital", url: "https://tychocap.com/" },
   { title: "Varadero", url: "https://www.varaderocapital.com/" },
+  { title: "VR Investments", url: "https://www.vrinvestments.com/" },
+  { title: "VR Investmenstos", url: "https://www.vrinvestimentos.com.br/" },
+  { title: "White Creek Capital", url: "https://www.whitecreek.com/" },
 ]
